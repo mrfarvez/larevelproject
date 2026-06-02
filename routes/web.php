@@ -14,6 +14,6 @@ Route::get('/student/{id}', function($id){
     return "student $id";
 });
 
-Route::get("/name/{name?}", function(){
-    return "Show default name when missing.";
+Route::get("/name/{name?}", function($name){
+    return "Show default $name when missing.";
 });
